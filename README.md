@@ -1,4 +1,6 @@
-Contributor
+# Ruang Belajar
 
-1. Sendy Prismana Nurferian - BE9190405
-2. Bob
+Contributor:
+
+- Sendy Prismana Nurferian - BE9190405
+- Bob
