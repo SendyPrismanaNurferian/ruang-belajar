@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Question Template</title>
+    <style>
+        /* CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+
+        .option input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple HTML Question Template</h1>
+        <div class="question">
+            <p>What is the capital of France?</p>
+            <ul class="options">
+                <li class="option"><label><input type="radio" name="answer" value="paris"> Paris</label></li>
+                <li class="option"><label><input type="radio" name="answer" value="london"> London</label></li>
+                <li class="option"><label><input type="radio" name="answer" value="berlin"> Berlin</label></li>
+                <li class="option"><label><input type="radio" name="answer" value="rome"> Rome</label></li>
+            </ul>
+        </div>
+        <button onclick="submitAnswer()">Submit</button>
+    </div>
+
+    <script>
+        function submitAnswer() {
+            var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            if (selectedAnswer) {
+                alert("Your answer is: " + selectedAnswer.value);
+            } else {
+                alert("Please select an answer.");
+            }
+        }
+    </script>
+</body>
+</html>
